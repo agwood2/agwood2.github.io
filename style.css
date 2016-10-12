@@ -1,5 +1,5 @@
 p {
-	color: #536482;
+	color: #36566D;
 	font-size: 20px;
 	text-align: center;
 }
@@ -8,9 +8,13 @@ h1{
   font-size: 36px;
   text-align: center;
 }
+p2{
+	color: #36566D;
+	font-size: 20px;
+}
 
 u1 {
-  	color: blue;
+  	color: #36566D;
   	font-size: 20px;
-  	text-align: center;
+
   }
