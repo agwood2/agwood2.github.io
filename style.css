@@ -46,7 +46,7 @@
 text{
 	fill:white;
 }
-.index-titles{
+.index-titles {
 	text-align: center;
 	font-size:100pt;
 	font-family: sans-serif;
@@ -54,6 +54,13 @@ text{
 }
 #intro-start{
 	padding: 200px 0px 125px 0px ;
+}
+#intro{
+	height : 825px;
+}
+#subtitles{
+	position:relative;
+	margin-top: 50px;
 }
 
 border: 1px solid #222;
