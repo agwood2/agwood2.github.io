@@ -39,6 +39,23 @@
 		<div class="col-md-6">.col-md-6</div>
 		<div class="col-md-6">.col-md-6</div>
 */	body<>
+*{
+	margin:0;
+	padding:0;
+}
+text{
+	fill:white;
+}
+.index-titles{
+	text-align: center;
+	font-size:100pt;
+	font-family: sans-serif;
+	font-weight: 250;
+}
+#intro-start{
+	padding: 200px 0px 125px 0px ;
+}
+
 border: 1px solid #222;
 background: #fff;
 body</>
