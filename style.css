@@ -46,7 +46,10 @@
 text{
 	fill:white;
 }
-#index-titles {
+#title-header {
+	font-family: 'Inconsolata', monospace;
+}
+.index-titles {
 	text-align: center;
 	font-size:100pt;
 	font-family: sans-serif;
@@ -54,9 +57,11 @@ text{
 }
 #intro-start{
 	padding: 200px 0px 125px 0px ;
+	text-align: center;
 }
 #intro{
 	height : 825px;
+	text-align: : center;
 }
 #subtitles{
 	position:relative;
