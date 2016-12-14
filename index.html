@@ -12,7 +12,7 @@
 <link href="https://fonts.googleapis.com/css?family=Inonsolata"rel='stylesheet' type='text/css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs.snap.svg/0.3.0/snap.svg-min.js"></script>
-<script src="JS/main.js"></script>
+<script src="script.js"></script>
 <link rel-"stylesheet"
 href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script
@@ -23,18 +23,26 @@ src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 			<h1>Adam Wood</h1>
 			<p> Computer Science Student at <a href ="https://www.buffalo.edu" target="_blank"> Buffalo </a> </p>
 
+			<nav>
+				<u2>
+					<li><a data-sectionid="about">About Me</a></li>
+					<li><a data-sectionid="portfolio">Portfolio</a></li>
+					<li><a data-sectionid="contact">Contact</a></li>
+				</u2>
+			</nav>
 
+				<!--
 			<div class="row">
-				<input type="button" onClick="document.getElementById('first').scrollIntoView({block: "end", behavior: "smooth"});"
+				<input type="button" onClick="document.getElementById('first').scrollIntoView('slow');"
 					value="About Me"/>
-				<input type="button" onClick="document.getElementById('second').scrollIntoView({block: "end", behavior: "smooth"});"
+				<input type="button" onClick="document.getElementById('second').scrollIntoView('slow');"
 					value="Portfolio"/>
-				<input type="button" onClick="document.getElementById('third').scrollIntoView({block: "end", behavior: "smooth"});"
+				<input type="button" onClick="document.getElementById('third').scrollIntoView('slow');"
 					 value="Contact"/>
-				 </div>
+				 </div> -->
 
 
-<div id="first">
+<div id="about">
 							<p1> <h2> About Me </h2>
 								I'm a freshman at the University at Buffalo looking to get my degree in Computer Science.
 							  I aspire to get an advanced degree in Cyber Security before starting my career in the field.
@@ -42,8 +50,8 @@ src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 							  reliable and dedicated. In addition, I am interested in the stock market and investing in real
 							  estate on my free time. </p1>
 </div>
-<div id="second">
-	  <h2> Resume </h2>
+<div id="portfolio">
+	  <h2> Portfolio </h2>
 		<h3> Relevant Coursework </h3>
 		<h4> High School </h4>
 		<u1>
@@ -68,7 +76,7 @@ src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 		<li> Digital Systems (CSE 241) </li>
 	</u1>
 	</div>
-	<div id="third">
+	<div id="contact">
 		<h2> Contact </h2>
 		<u1 style="list-style:none;">
 <li> Email: agwood2@buffalo.edu </li>
@@ -120,15 +128,15 @@ u1{
 	text-align: left;
 	font-size: 30px;
 }
-#first{
+#about{
 	background:gray;
 	color:blue;
 }
-#second{
+#portfolio{
 	background:#304269;
 	color:white;
 }
-#third{
+#contact{
 	background:black;
 	color:white;
 }
