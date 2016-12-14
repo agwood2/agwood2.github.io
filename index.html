@@ -25,19 +25,44 @@ src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 
 
 			<div class="row">
-				<a href="window.scrollTo(0,500);" target="_blank"> <button type="button" class="btn btn-info"
-					style="color: grey">About me</button></a>
-					<a href="resume.html" target="_blank"> <button type="button" class="btn btn-info"
-						style="color: grey">Resume</button></a>
-						<a href="contact.html" target="_blank"> <button type="button" class="btn btn-info"
-							style="color: grey">Contact</button></a></div>
+				<input type="button" onClick="document.getElementById('first').scrollIntoView();" class="btn btn-info"
+					style="color: grey">About me</button></>
+					<input type="button" onClick="document.getElementById('second').scrollIntoView();" class="btn btn-info"
+						style="color: grey">Resume</button></>
+						<input type="button" onClick="document.getElementById('third').scrollIntoView();" class="btn btn-info"
+							style="color: grey">Contact</button></></div>
 
-
-							<p1> I'm a freshman at the University at Buffalo looking to get my degree in Computer Science.
+<a href="#first">First</a>
+<a href="#second">Second</a>
+<a href="third">Third</a>
+<div id="first"><a href="first"></a>First</a>
+							<p1> <h2> About Me </h2>
+								I'm a freshman at the University at Buffalo looking to get my degree in Computer Science.
 							  I aspire to get an advanced degree in Cyber Security before starting my career in the field.
 							  People usually describe me as an attentive, conscientious, and hard working student who is
 							  reliable and dedicated. In addition, I am interested in the stock market and investing in real
 							  estate on my free time. </p1>
+</div>
+<div id="second"><a href="second"></a>Second</a>
+	  <h2> Resume </h2>
+		<h3> Relevant Coursework </h3>
+		<h4> High School </h4>
+		<u1> Design and Drawing for Production B </u1>
+		<u1> Digital Electronics </u1>
+		<u1> Principles of Engineering </u1>
+		<u1> AP: Biology, Calculus, Computer Science </u1>
+		<h4> School of Engineering and Applies Sciences at the University at Buffalo</h4>
+		<h5> First Semester </h5>
+		<u1> American History (HIS 161) </u1>
+		<u1> Calculus I (MTH 141) </u1>
+		<u1> <a href="https://internet-class.org" target="_blank"> Internet Class: UB Seminar (CSE 199)</a> </u1>
+		<u1> Introduction to Computer Science I (CSE 115) </u1>
+		<h5> Second Semester (Upcoming Spring 2017) </h5>
+		<u1> Calculus II (MTH 142) </u1>
+		<u1> Introduction to Computer Science II (CSE 116) </u1>
+		<u1> Introduction to Discrete Structures (CSE 191) </u1>
+		<u1> Digital Systems (CSE 241) </u1>
+	</div>
 
 </body>
 <style>
@@ -61,6 +86,26 @@ p{
 }
 p1{
 	text-align: center;
+	font-size: 30px;
+}
+h2{
+	text-align: center;
+	font-size: 50px;
+}
+h3{
+	text-align: left;
+	font-size: 42px;
+}
+h4{
+	text-align: left;
+	font-size: 35px;
+}
+h5{
+	text-align: left;
+	font-size: 32px;
+}
+u1{
+	text-align: left;
 	font-size: 30px;
 }
 </style>
