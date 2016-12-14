@@ -25,9 +25,9 @@ src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 
 			<nav>
 				<u2>
-					<li><a data-sectionid="about"></a></li>
-					<li><a data-sectionid="portfolio">Portfolio</a></li>
-					<li><a data-sectionid="contact">Contact</a></li>
+					<li1><a data-sectionid="about"></a></li1>
+					<li1><a data-sectionid="portfolio">Portfolio</a></li1>
+					<li1><a data-sectionid="contact">Contact</a></li1>
 				</u2>
 			</nav>
 
@@ -43,12 +43,12 @@ src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 
 
 <div id="about">
-							<p1> <h2> About Me </h2>
-								I'm a freshman at the University at Buffalo looking to get my degree in Computer Science.
-							  I aspire to get an advanced degree in Cyber Security before starting my career in the field.
-							  People usually describe me as an attentive, conscientious, and hard working student who is
-							  reliable and dedicated. In addition, I am interested in the stock market and investing in real
-							  estate on my free time. </p1>
+		<p1> <h2> About Me </h2>
+				I'm a freshman at the University at Buffalo looking to get my degree in Computer Science.
+			  I aspire to get an advanced degree in Cyber Security before starting my career in the field.
+			  People usually describe me as an attentive, conscientious, and hard working student who is
+			  reliable and dedicated. In addition, I am interested in the stock market and investing in real
+			  estate on my free time. </p1>
 </div>
 <div id="portfolio">
 	  <h2> Portfolio </h2>
@@ -79,9 +79,9 @@ src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 	<div id="contact">
 		<h2> Contact </h2>
 		<u1 style="list-style:none;">
-<li> Email: agwood2@buffalo.edu </li>
-<li> Email: agwood12@gmail.com </li>
-<li> <a href="https://github.com/agwood2/" target="_blank"> GitHub Account </a></li>
+<li style="text-align:center;"> Email: agwood2@buffalo.edu </li>
+<li style="text-align:center;"> Email: agwood12@gmail.com </li>
+<li style="text-align:center;"> <a href="https://github.com/agwood2/" target="_blank"> GitHub Account </a></li>
 	</u1>
 </div>
 </body>
@@ -133,9 +133,27 @@ nav li{
 	list-style: none;
 	margin:auto;
 }
-nav u2{
-	max-width:1000px;
-	margin:auto;
+u2{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+li1{
+	float:left;
+}
+li1 a{
+	display:block;
+	color:white;
+	text-align: center;
+	padding: 36px 24px;
+	font-size: 32px;
+	text-decoration: none;
+}
+li1 a:hover{
+	background-color: #111;
+	color:red;
 }
 u1{
 	text-align: left;
