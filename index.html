@@ -9,6 +9,7 @@
 		<meta name="author" content="Adam Wood">
 		<title> Adam Wood</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/css?family=Inonsolata"rel='stylesheet' type='text/css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs.snap.svg/0.3.0/snap.svg-min.js"></script>
@@ -19,10 +20,10 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 </script>
 <body>
-
+			<div id="intro">
 			<h1>Adam Wood</h1>
 			<p> Computer Science Student at <a href ="https://www.buffalo.edu" target="_blank"> Buffalo </a> </p>
-
+</div>
 			<nav>
 				<ul>
 					<li id="banner"><a data-sectionid="about">About Me</a></li>
@@ -87,9 +88,13 @@ src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 </div>
 </body>
 <style>
+intro{
+	background-color: #304269;
+}
 body{
   background-image: url("http://giphy.com/gif/26gJAFwg6xhrunIbu/html5");
 	background-size: cover;
+	font-family: Karla;
 }
 h1{
 	font-family: cursive;
@@ -174,13 +179,13 @@ ul{
 	font-size: 30px;
 }
 #about{
-	background:gray;
+	background-color: #4C5364;
 	color:white;
 	font-weight: lighter;
 	padding: 75px 0px 50px 0px;
 }
 #portfolio{
-	background:#304269;
+	background-color: #ddd;
 	color:white;
 	font-weight: lighter;
 	padding: 50px 0px 50px 20px;
