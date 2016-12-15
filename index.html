@@ -27,11 +27,30 @@ src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 			<p> Computer Science Student at Buffalo </p>
 </div>
 
-	<div id="dropDown">
+	<div id="dropDown" onclick="toggleDD()">
 			<div></div>
 			<div></div>
 			<div></div>
 		</div>
+	<div id="panel"></div>
+	<div id="content">
+		<script>
+    for(var i = 0; i < 40; i++){ document.write("<h2>"+(i+1)+". What ... </h2>"); }
+</script>
+</div>
+
+	<script>
+	function toggleDD(){
+	var cp = document.getElementById("panel");
+	if(cp.style.opacity == 1){
+		cp.style.opacity = 0;
+		cp.style.right = "-260px"; // remove it from active screen space
+	} else {
+		cp.style.right = "0px"; // return it to active screen space
+		cp.style.opacity = 1;
+	}
+}
+</script>
 <!--
 <ul id="nav">
 	<li><a href="#">About</a></li>
