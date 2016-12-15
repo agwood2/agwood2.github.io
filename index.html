@@ -31,6 +31,10 @@ src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 			<div></div>
 			<div></div>
 			<div></div>
+			<ul?
+			<li><a href="#">About</a></li>
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#">Contact</a></li>
 		</div>
 	<div id="panel"></div>
 	<div id="content">
@@ -122,7 +126,7 @@ src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 		<h5> First Semester </h5>
 		<li> American History (HIS 161) </li>
 		<li> Calculus I (MTH 141) </li>
-		<li Internet Class: UB Seminar (CSE 199) </li>
+		<li> Internet Class: UB Seminar (CSE 199) </li>
 		<li> Introduction to Computer Science I (CSE 115) </li>
 	</ul>
 	<ul style="list-style:square;">
@@ -227,8 +231,16 @@ src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 	cursor: pointer;
 	transition: border 0.4s lonear 0s;
 }
+
 #dropDown:hover{
 	border: crimson 1px solid;
+}
+#dropDown:hover ul{
+display:block;
+}
+#dropDown ul{
+	display:none;
+	position:absolute;
 }
 #dropDown:hover div{
 background:#crimson;
