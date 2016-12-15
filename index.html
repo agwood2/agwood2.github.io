@@ -19,6 +19,7 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script
 src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 </script>
+
 </head>
 <body>
 			<div id="intro">
@@ -26,14 +27,21 @@ src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 			<p> Computer Science Student at Buffalo </p>
 </div>
 
-	<div class="dropdown">
+
+<ul id="nav">
+	<li><a href="#">About</a></li>
+	<li><a href="#">Portfolio</a></li>
+	<li><a href="#">Contact</a></li>
+</ul>
+
+	<!-- <div class="dropdown">
 		<button onclick="myfunction()" class="dropbtn">Navigation</button>
 		<div id="myDropdown" class="dropdown-content">
 			<a href="#">About</a>
 			<a href="#">Portfolio</a>
 			<a href="#">Contact</a>
 </div>
-</div>
+</div> -->
 						<!-- <nav id="navbar">
 				<ul id="fixednav">
 					<li><a href="#">About</a></li>
@@ -105,8 +113,64 @@ src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 </div>
 </body>
 <style>
+<title>Responsive 3-Line Menu</title>
+	<style type="text/css">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	ul {
+		width:100%;
+	}
+
+	li {
+		width:33%;
+		float:left;
+		border-right: 1px solid #eee;
+	}
+	li:last-child {
+		border-right:none;
+	}
+
+	li a {
+		display: block;
+		width:80%;
+		background:#ddd;
+		padding:4% 10%;
+		font-size:1.35em;
+		text-decoration: none;
+	}
+
+	@media screen and (max-width: 768px) {
+		#menu {
+			width:1.4em;
+			display: block;
+			background:#ddd;
+			font-size:1.35em;
+			text-align: center;
+		}
+		#nav.js {
+			display: none;
+		
+		}
+		ul {
+			width:100%;
+			list-style:none;
+		}
+		li {
+			width:100%;
+			border-right:none;
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		#menu {
+			display: none;
+		}
+	}
+
 /* Dropdown Button */
-.dropbtn {
+/*.dropbtn {
     background-color: #4CAF50;
     color: white;
     padding: 16px;
@@ -148,7 +212,7 @@ src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 .dropdown-content a:hover {background-color: #333; color:red;}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
+.show {display:block;}*/
 #intro{
 	background-color: #304269;
 	color: white;
@@ -156,7 +220,7 @@ src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 	margin-bottom: 0px;
 	padding-top: 20px;
 	padding-bottom: 4px;
-}
+} -->
 body{
 
 	font-family: Karla;
