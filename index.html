@@ -25,13 +25,22 @@ src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 			<h1>Adam Wood</h1>
 			<p> Computer Science Student at Buffalo </p>
 </div>
-			<nav id="navbar">
+
+	<div class="dropdown">
+		<button onclick="myfunction()" class="dropbtn">Navigation</button>
+		<div id="myDropdown" class="dropdown-content">
+			<a href="#">About</a>
+			<a href="#">Portfolio</a>
+			<a href="#">Contact</a>
+</div>
+</div>
+						<!-- <nav id="navbar">
 				<ul id="fixednav">
 					<li><a href="#">About</a></li>
 					<li><a href="#">Portfolio</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
-			</nav>
+			</nav> -->
 </div>
 <!-- <nav id="navbar">
 	<ul id="fixednav">
@@ -96,6 +105,50 @@ src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 </div>
 </body>
 <style>
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+	float:left;
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #333; color:red;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
 #intro{
 	background-color: #304269;
 	color: white;
