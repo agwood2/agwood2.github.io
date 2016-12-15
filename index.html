@@ -228,9 +228,9 @@ src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 	background:linear-gradient(#FFF, #DDD);
 	border: #AAA 1px solid;
 	border-radius: 2px;
-	padding: 24px 28px;
+	padding: 10px 5px;
 	cursor: pointer;
-	transition: border 0.4s lonear 0s;
+	transition: border 0.4s linear 0s;
 }
 
 #dropDown:hover{
@@ -240,11 +240,17 @@ src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 display:block;
 }
 #dropDown ul{
+	list-style:none;
 	display:none;
 	position:absolute;
+	background-color: #222;
 }
 #dropDown:hover div{
 background:#crimson;
+}
+#dropDown ul li{
+
+	display:block;
 }
 #dropDown > div{
 	width: 20px;
