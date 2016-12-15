@@ -11,7 +11,7 @@
 
 <script type="text/javascript">
 $(document).ready(function(){
-  $('#navigation a, #fixedbar a').onlick="document.getElementById('first').scrollIntoView('slow');"{
+  $('#navigation a, #fixedbar a').onlick="document.getElementById().scrollIntoView('slow');"{
 
   });
 
