@@ -11,8 +11,8 @@
 
 <script type="text/javascript">
 $(document).ready(function(){
-  $('#navigation a, #fixedbar a').on('click', function(e) {
-    e.preventDefault();
+  $('#navigation a, #fixedbar a').onlick="document.getElementById('first').scrollIntoView('slow');"{
+
   });
 
   $(window).on('scroll',function() {
