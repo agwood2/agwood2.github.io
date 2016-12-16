@@ -49,7 +49,7 @@ function autoScrollTo(section){
 	else{
 		if(currentY < targetY-distance){
 			scrollY = currentY+distance;
-			window.scroll(0, scrollY);
+			window.scroll(0, section);
 		}
 		else{
 			clearTimeout(animator);
