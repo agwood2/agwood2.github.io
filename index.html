@@ -39,13 +39,13 @@ var distance = 40;
 var speed = 24;
 var scrollY = 0;
 var distance = 40;
-var speed = 18;
+var speed = 24;
 function autoScrollTo(el) {
 	var currentY = window.pageYOffset;
 	var targetY = document.getElementById(el).offsetTop;
 	var bodyHeight = document.body.offsetHeight;
 	var yPos = currentY + window.innerHeight;
-	var animator = setTimeout('autoScrollTo(\''+el+'\')',18);
+	var animator = setTimeout('autoScrollTo(\''+el+'\')',24);
 	if(yPos > bodyHeight){
 		clearTimeout(animator);
 	} else {
@@ -251,9 +251,10 @@ ul{
 	padding: 40px 0px 30px 60px;
 }
 #contact ul li{
-	margin-top: 25px;
-	margin-bottom: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
+
 #contact{
 	margin-top: 0px;
 	background:#333;
