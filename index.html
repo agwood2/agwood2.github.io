@@ -21,15 +21,15 @@ src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 </script>
 <script>
 window.addEventListener("scroll", yScroll);
-var banner, yPosition;
+var menu, yPosition;
 function yScroll(){
-	 banner = document.getElementById('banner');
+	 banner = document.getElementById('menu');
 	 yPosition = window.pageYOffset;
 	 if(yPosition > 200){
-		 banner.style.height = "0px";
+		 menu.style.height = "0px";
 	 }
 	 else{
-		
+
 	 }
 }
 </script>
@@ -40,7 +40,7 @@ function yScroll(){
 			<div id="illustration"><center><img src="agwood2.github.io/logo.png"></center></div>
 			<p> Computer Science Student at Buffalo </p>
 </div>
-			<nav>
+			<nav id="menu">
 				<ul>
 					<li id="banner"><a data-sectionid="about">About Me</a></li>
 					<li id="banner"><a data-sectionid="portfolio">Portfolio</a></li>
