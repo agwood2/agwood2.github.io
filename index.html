@@ -49,7 +49,7 @@ function autoScrollTo(section){
 	else{
 		if(currentY < targetY){
 			scrollY = currentY+distance;
-			window.scroll(0, section);
+			window.scroll(0, scrollY);
 		}
 		// else{
 		// 	clearTimeout(animator);
@@ -66,9 +66,9 @@ function autoScrollTo(section){
 </div>
 			<nav id="menu">
 				<ul>
-					<li id="banner"><a href="#" onclick="return false;" onmousedown="autoScrollTo('about');">About Me</a></li>
-					<li id="banner"><a href="#" onclick="autoScrollTo('portfolio');">Portfolio</a></li>
-					<li id="banner"><a href="#" onclick="return false;" onmousedown="autoScrollTo('contact');">Contact</a></li>
+					<li id="banner"><a href="#" onclick="return false;" onmousedown="autoScrollTo("about");">About Me</a></li>
+					<li id="banner"><a href="#" onclick="return false;" onmousedown="autoScrollTo("portfolio");">Portfolio</a></li>
+					<li id="banner"><a href="#" onclick="return false;" onmousedown="autoScrollTo("contact");">Contact</a></li>
 				</ul>
 			</nav>
 </div>
