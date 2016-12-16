@@ -19,6 +19,20 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script
 src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 </script>
+<script>
+window.addEventListener("scroll", yScroll);
+var banner, yPosition;
+function yScroll(){
+	 banner = document.getElementById('banner');
+	 yPosition = window.pageYOffset;
+	 if(yPosition > 200){
+		 banner.style.height = "0px";
+	 }
+	 else{
+		
+	 }
+}
+</script>
 </head>
 <body>
 			<div id="intro">
