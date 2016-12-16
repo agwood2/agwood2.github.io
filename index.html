@@ -19,91 +19,31 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script
 src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 </script>
-
 </head>
 <body>
 			<div id="intro">
 			<h1>Adam Wood</h1>
 			<p> Computer Science Student at Buffalo </p>
 </div>
-<!--
-	<div id="dropDown" onclick="toggleDD()">
-			<div></div>
-			<div></div>
-			<div></div>
-			<ul>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Portfolio</a></li>
-			<li><a href="#">Contact</a></li>
-		</u1>
-		</div>
-	<div id="panel"></div>
-	<div id="content">
-
-</div>
-
-	<script>
-	function toggleDD(){
-	var cp = document.getElementById("panel");
-	if(cp.style.opacity == 1){
-		cp.style.opacity = 0;
-		cp.style.right = "-260px"; // remove it from active screen space
-	} else {
-		cp.style.right = "0px"; // return it to active screen space
-		cp.style.opacity = 1;
-	}
-}
-</script> -->
-
-<ul id="nav">
-	<li><a href="#">About</a></li>
-	<li><a href="#">Portfolio</a></li>
-	<li><a href="#">Contact</a></li>
-</ul>
-
-	<!-- <div class="dropdown">
-		<button onclick="myfunction()" class="dropbtn">Navigation</button>
-		<div id="myDropdown" class="dropdown-content">
-			<a href="#">About</a>
-			<a href="#">Portfolio</a>
-			<a href="#">Contact</a>
-</div>
-</div> -->
-						<!-- <nav id="navbar">
-				<ul id="fixednav">
-					<li><a href="#">About</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Contact</a></li>
+			<nav>
+				<ul>
+					<li id="banner"><a data-sectionid="about">About Me</a></li>
+					<li id="banner"><a data-sectionid="portfolio">Portfolio</a></li>
+					<li id="banner"><a data-sectionid="contact">Contact</a></li>
 				</ul>
-			</nav> -->
-
-<!-- <nav id="navbar">
-	<ul id="fixednav">
-		<li id="banner"><a data-sectionid="about">About Me</a></li>
-		<li id="banner"><a data-sectionid="portfolio">Portfolio</a></li>
-		<li id="banner"><a data-sectionid="contact">Contact</a></li>
-	</ul>
-</nav>
-</div> -->
-
-			  <!-- <div class="row">
-				<input type="button" onClick="document.getElementById('about').scrollIntoView('slow');"
+			</nav>
+</div>
+				<!--
+			<div class="row">
+				<input type="button" onClick="document.getElementById('first').scrollIntoView('slow');"
 					value="About Me"/>
-				<input type="button" onClick="document.getElementById('portfolio').scrollIntoView('slow');"
+				<input type="button" onClick="document.getElementById('second').scrollIntoView('slow');"
 					value="Portfolio"/>
-				<input type="button" onClick="document.getElementById('contact').scrollIntoView('slow');"
+				<input type="button" onClick="document.getElementById('third').scrollIntoView('slow');"
 					 value="Contact"/>
 				 </div> -->
-<!-- <nav class="navigation">
-		<ul class="menu">
-			<li><a href="#Top"</a></li>
-			<li><a href="#About"</a></li>
-			<li><a href="#Portfolio"</a></li>
-			<li><a href="#Contact"</a></li>
-			</ul>
-		</nav> -->
 
-<div id="top"></div>
+
 <div id="about">
 	<h2> About Me </h2>
 		<p1>	I'm a freshman at the University at Buffalo looking to get my degree in Computer Science.
@@ -127,7 +67,7 @@ src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 		<h5> First Semester </h5>
 		<li> American History (HIS 161) </li>
 		<li> Calculus I (MTH 141) </li>
-		<li> Internet Class: UB Seminar (CSE 199) </li>
+		<li Internet Class: UB Seminar (CSE 199) </li>
 		<li> Introduction to Computer Science I (CSE 115) </li>
 	</ul>
 	<ul style="list-style:square;">
@@ -148,118 +88,6 @@ src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 </div>
 </body>
 <style>
-/*<title>Responsive 3-Line Menu</title>
-	<style type="text/css">
-	* {
-		margin: 0;
-		padding: 0;
-	}
-	ul {
-		width:100%;
-	}
-
-	li {
-		width:33%;
-		float:left;
-		border-right: 1px solid #eee;
-	}
-	li:last-child {
-		border-right:none;
-	}
-
-	li a {
-		display: block;
-		width:80%;
-		background:#ddd;
-		padding:4% 10%;
-		font-size:1.35em;
-		text-decoration: none;
-	}
-
-	@media screen and (max-width: 768px) {
-		#menu {
-			width:1.4em;
-			display: block;
-			background:#ddd;
-			font-size:1.35em;
-			text-align: center;
-		}
-		#nav.js {
-			display: none;
-
-		}
-		ul {
-			width:100%;
-			list-style:none;
-		}
-		li {
-			width:100%;
-			border-right:none;
-		}
-	}
-
-	@media screen and (min-width: 768px) {
-		#menu {
-			display: none;
-		}
-	}*/
-
-/* Dropdown Button */
-/*.dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-/* Dropdown button on hover & focus */
-/*.dropbtn:hover, .dropbtn:focus {
-    background-color: #3e8e41;
-}
-
-/* The container <div> - needed to position the dropdown content */
-/*#dropDown{
-	position: fixed ;
-	float:right;
-	width:20px;
-	height:20px;
-	background:linear-gradient(#FFF, #DDD);
-	border: #AAA 1px solid;
-	border-radius: 2px;
-	padding: 18px 18px;
-	cursor: pointer;
-	transition: border 0.4s linear 0s;
-}
-
-#dropDown:hover{
-	border: crimson 1px solid;
-}
-#dropDown:hover ul{
-display:block;
-}
-#dropDown ul{
-	list-style:none;
-	display:none;
-	position:absolute;
-	background-color: #222;
-}
-#dropDown:hover div{
-background:#crimson;
-}
-#dropDown ul li{
-
-	display:block;
-}
-#dropDown > div{
-	width: 20px;
-	height: 4px;
-	background:#333;
-	margin: 3px 0px;
-	border-radius: 4px;
-	transition: background 0.5s linear 0s;
-}
 #intro{
 	background-color: #304269;
 	color: white;
@@ -267,9 +95,10 @@ background:#crimson;
 	margin-bottom: 0px;
 	padding-top: 20px;
 	padding-bottom: 4px;
-} -->*/*/
+}
 body{
-
+  background-image: url("http://giphy.com/gif/26gJAFwg6xhrunIbu/html5");
+	background-size: cover;
 	font-family: Karla;
 	margin:0;
 }
@@ -354,89 +183,6 @@ li a{
 #banner:hover{
 	background-color: #111;
 	color:red;
-}*/
-/* top navigation */
-/*#nav {
-  display: block;
-  height: 35px;
-  background-color: #131313;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#202020), to(#131313));
-  background-image: -webkit-linear-gradient(top, #202020, #131313);
-  background-image: -moz-linear-gradient(top, #202020, #131313);
-  background-image: -ms-linear-gradient(top, #202020, #131313);
-  background-image: -o-linear-gradient(top, #202020, #131313);
-  background-image: linear-gradient(top, #202020, #131313);
-}
-#fixedbar {
- display: none;
- position: fixed;
- top: 0;
- width: 100%;
- height: 80px;
- background: rgba(0,0,0,0.75);
-}
-
-#fixednav {
- display: block;
- width: 710px;
- margin: 0 auto;
- padding: 0px 25px;
-}
-
-#fixednav li a {
- display: block;
- float: left;
- font-size: 1.75em;
- font-weight: bold;
- color: #96aed8;
- line-height: 80px;
- text-decoration: none;
- padding: 0px 8px;
- margin-right: 6px;
- -webkit-transition: all 0.2s linear;
- -moz-transition: all 0.2s linear;
- transition: all 0.2s linear;
-}
-#fixednav li a:hover {
- color: #fff;
- background: rgba(0,0,0,0.3);
-}
-#nav ul { list-style: none; padding: 0px 7px; }
-
-#nav ul li { display: inline; float: left; }
-#nav ul li a {
-  display: block;
-  padding: 0 8px;
-  color: #fff;
-  font-size: 1.1em;
-  text-decoration: none;
-  line-height: 35px;
-  font-weight: bold;
-  margin-right: 6px;
-  text-shadow: 1px 1px 1px #000;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
-#navigation ul li a:hover { color: #a8d6e7; }
-html{
-	height: 101%;
-}*/
-nav{
-	background-color: #333;
-	list-style: none;
-	display:block;
-	margin:0;
-	padding:0;
-	border:0;
-	font-size:100%;
-	font: inherit;
-	vertical-align: baseline;
-	outline:none;
-	-webkit-text-size-adjust: 100%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing:border-box;
 }
 ul{
 	text-align: left;
