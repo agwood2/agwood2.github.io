@@ -63,12 +63,9 @@ var pagetop, yPos;
 function yScroll(){
 	pagetop = document.getElementById('banner');
 	yPos = window.pageYOffset;
-	if(yPos > 220){
+	if(yPos > 100){
 		pagetop.style.position = fixed;
 		pagetop.style.float = top;
-	} else {
-		pagetop.style.height = "120px";
-		pagetop.style.paddingTop = "50px";
 	}
 }
 window.addEventListener("scroll", yScroll);
