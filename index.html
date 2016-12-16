@@ -58,7 +58,21 @@ function autoScrollTo(el) {
 	}
 }
 </script>
-</head>
+<script>
+var pagetop, yPos;
+function yScroll(){
+	pagetop = document.getElementById('banner');
+	yPos = window.pageYOffset;
+	if(yPos > 150){
+		pagetop.style.height = "36px";
+		pagetop.style.paddingTop = "8px";
+	} else {
+		pagetop.style.height = "120px";
+		pagetop.style.paddingTop = "50px";
+	}
+}
+window.addEventListener("scroll", yScroll);
+</script>
 <body>
 			<div id="intro">
 			<h1>Adam Wood</h1>
