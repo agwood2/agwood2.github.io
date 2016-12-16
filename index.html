@@ -63,9 +63,8 @@ var pagetop, yPos;
 function yScroll(){
 	pagetop = document.getElementById('banner');
 	yPos = window.pageYOffset;
-	if(yPos > 150){
-		pagetop.style.height = "36px";
-		pagetop.style.paddingTop = "8px";
+	if(yPos > 220){
+		pagetop.style.position = top;
 	} else {
 		pagetop.style.height = "120px";
 		pagetop.style.paddingTop = "50px";
